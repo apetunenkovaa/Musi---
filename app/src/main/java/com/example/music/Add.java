@@ -37,7 +37,7 @@ public class Add extends AppCompatActivity {
     EditText Executor;
     EditText Genre;
     EditText Duration;
-    Bitmap bm = null;
+    Bitmap Image = null,bm;
     ImageView Img;
 
 

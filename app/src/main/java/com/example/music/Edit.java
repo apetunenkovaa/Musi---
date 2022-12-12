@@ -60,9 +60,11 @@ public class Edit extends AppCompatActivity {
         Image_D decodeImage = new Image_D(Edit.this);
         Bitmap userImage = decodeImage.getUserImage(mask.getImage());
         Img.setImageBitmap(userImage);
-        if(!mask.getImage().equals("null")){
-            bm = userImage;
+        /*if(!mask.getImage().equals("null")){
+            bm=userImage;
         }
+*/
+
     }
 
     private final ActivityResultLauncher<Intent> pickImg = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
