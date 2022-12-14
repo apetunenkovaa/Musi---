@@ -60,7 +60,7 @@ public class Edit extends AppCompatActivity {
         Image_D decodeImage = new Image_D(Edit.this);
         Bitmap userImage = decodeImage.getUserImage(mask.getImage());
         Img.setImageBitmap(userImage);
-        /*if(!mask.getImage().equals("null")){
+     /*   if(!mask.getImage().equals("null")){
             bm=userImage;
         }
 */
@@ -126,7 +126,7 @@ public class Edit extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private  void delete(Mask mask, View view)
+    private void delete(Mask mask, View view)
     {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://ngknn.ru:5001/NGKNN/ПетуненковаАП/api/")

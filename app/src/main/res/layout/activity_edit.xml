@@ -90,11 +90,11 @@
         android:id="@+id/btUpdate"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="@color/purple_200"
         android:onClick="Update"
         android:text="Изменение"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btDelete"
         app:layout_constraintEnd_toStartOf="@+id/btBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Et_Duration" />
@@ -103,11 +103,11 @@
         android:id="@+id/btBack"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="@color/purple_200"
         android:onClick="Back"
         android:text="Назад"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/btDelete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btUpdate"
         app:layout_constraintTop_toBottomOf="@+id/Et_Duration" />
@@ -116,14 +116,17 @@
         android:id="@+id/btDelete"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@color/purple_200"
         android:onClick="Delete"
         android:text="Удаление"
         android:textColor="#FFFFFF"
-        android:background="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btUpdate" />
+        app:layout_constraintTop_toBottomOf="@+id/Et_Duration"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

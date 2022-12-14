@@ -29,7 +29,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class General extends AppCompatActivity {
-    private Adapter pAdapter;
+    Adapter pAdapter;
     private List<Mask> list = new ArrayList<>();
     Spinner spinner;
     EditText filter;
@@ -97,7 +97,7 @@ public class General extends AppCompatActivity {
     public void onSearch(View view) {
 
     }
-    private class GetMusic extends AsyncTask<Void, Void, String> {
+     class GetMusic extends AsyncTask<Void, Void, String> {
 
         @Override
         protected String doInBackground(Void... voids) {
@@ -125,6 +125,7 @@ public class General extends AppCompatActivity {
             super.onPostExecute(s);
             try
             {
+                list.clear();
                 JSONArray tempArray = new JSONArray(s);
                 for (int i = 0;i<tempArray.length();i++)
                 {

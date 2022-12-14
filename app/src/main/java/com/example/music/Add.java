@@ -70,6 +70,7 @@ public class Add extends AppCompatActivity {
         }
     });
 
+
     public void getImage(View v)
     {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -106,7 +107,8 @@ public class Add extends AppCompatActivity {
         call.enqueue(new Callback<Mask>() {
             @Override
             public void onResponse(Call<Mask> call, Response<Mask> response) {
-                Toast.makeText(Add.this, "Успешное добавление!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Add.this, "Данные успешно добавлены!", Toast.LENGTH_SHORT).show();
+
             }
 
             @Override

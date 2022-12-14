@@ -31,6 +31,16 @@ public class Mask implements Parcelable {
         Image = in.readString();
     }
 
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(ID_Music);
+        dest.writeString(Name);
+        dest.writeString(Executor);
+        dest.writeString(Genre);
+        dest.writeString(Duration);
+        dest.writeString(Image);
+    }
+
     public static final Creator<Mask> CREATOR = new Creator<Mask>() {
         @Override
         public Mask createFromParcel(Parcel in) {
@@ -68,14 +78,6 @@ public class Mask implements Parcelable {
         return 0;
     }
 
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(ID_Music);
-        parcel.writeString(Name);
-        parcel.writeString(Executor);
-        parcel.writeString(Genre);
-        parcel.writeString(Duration);
-    }
 
     public String getName() {
         return Name;

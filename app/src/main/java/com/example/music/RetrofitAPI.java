@@ -9,12 +9,12 @@ import retrofit2.http.PUT;
 import retrofit2.http.Query;
 
 public interface RetrofitAPI {
-    @POST("Music")
+    @POST("Musics")
     Call<Mask> createPost(@Body Mask dataModal);
 
-    @PUT("Music/")
+    @PUT("Musics/")
     Call<Mask> createPut(@Body Mask dataModal, @Query("ID") int id);
 
-    @DELETE("Music")
+    @DELETE("Musics")
     Call<Mask> createDelete(@Query("id") int id);
 }
